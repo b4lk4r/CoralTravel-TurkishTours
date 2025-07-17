@@ -4,6 +4,8 @@
     "cdnAssetsURL": "//b2ccdn.coral.ru/content/landing-pages/info-actions"
   },
   "sections": [
-    
+    "site/coral.ru/markup/banner.html",
+    "site/coral.ru/markup/info-section.html",
+    "site/coral.ru/markup/spec-section.html"
   ]
 }
