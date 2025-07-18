@@ -14,22 +14,22 @@
 
 .title{
     color: var(--olor_Text_Dark, #000);
-font-family: Manrope;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: var(40px);
-margin: 0 0;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(40px);
+    margin: 0 0;
 }
 
 .desc{
     color: var(--colorTextHeading, rgba(0, 0, 0, 0.85));
-font-family: Manrope;
-font-size: var(--font-font_Size_Body, 16px);
-font-style: normal;
-font-weight: 400;
-line-height: var(--font-font_Line_Height_Body, 24px);
-margin: 0 0;
+    font-family: Manrope;
+    font-size: var(--font-font_Size_Body, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-font_Line_Height_Body, 24px);
+    margin: 0 0;
 }
 
 .second-object{
@@ -45,7 +45,6 @@ margin: 0 0;
     background: #CCE9F6;
     border-radius: 20px;
     overflow: hidden;
-    flex: 1;
     min-height: 100%;
     position: relative;
 }
@@ -55,32 +54,30 @@ margin: 0 0;
 }
 
 .object-img{
-    border-bottom-left-radius: 741.429px;
-    border-top-left-radius: 1441.429px;
+    border-radius: 1050px;
     overflow: hidden;
     width: 810px;
     height: 359.871px;
     position: absolute;
-    bottom: -68px;
-    right: -500px;
-
+    bottom: -92px;
+    right: -521px;
     background-position: center;
 }
 
 .objectBlue-img{
     position: absolute;
-    top: 0;
-    left: -14px;
-    width: 424px;
-    height: 292px;
+    top: 0px;
+    left: -5px;
+    width: 395px;
+    height: 268px;
 }
 
 .objectRed-img{
     position: absolute;
     top: 0;
-    left: 0px;
+    left: -24px;
     width: 504px;
-    height: 370px;
+    height: 338px;
 }
 
 .object-text{
@@ -88,50 +85,120 @@ margin: 0 0;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 60%;
-    gap: 24px;
+    gap: 15px;
     padding: 24px;
-    flex-grow: 1;
+    width: 54%;
+
 }
 
 .object-text-title{
     color: #000;
-font-family: Manrope;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 28px;
-margin: 0 0;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0 0;
 }
 
 .object-text-descr{
     color: rgba(0, 0, 0, 0.85);
-font-family: Manrope;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-margin: 0 0;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0;
 }
 
 .test{
-    width: 40%;
+    flex-grow: 1;
     height: 100%;
 }
 
 
 
 @media (min-width: 1280px) and (max-width: 1439.98px) {
+    .object-img{
+        border-radius: 1050px;
+        overflow: hidden;
+        width: 810px;
+        height: 359.871px;
+        position: absolute;
+        bottom: -110px;
+        right: -558px;
+        background-position: center;
+    }
 
+    .objectBlue-img{
+        position: absolute;
+        top: 0px;
+        left: -13px;
+        width: 364px;
+        height: 250px;
+    }
+
+    .objectRed-img{
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 462px;
+        height: 300px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
+    .object-img{
+        border-radius: 1050px;
+        overflow: hidden;
+        width: 810px;
+        height: 359.871px;
+        position: absolute;
+        bottom: -92px;
+        right: -591px;
+        background-position: center;
+    }
 
+    .objectBlue-img{
+        position: absolute;
+        top: 0px;
+        left: -80px;
+        width: 392px;
+        height: 268px;
+    }
+
+    .objectRed-img{
+        position: absolute;
+        top: 0;
+        left: -7px;
+        width: 475px;
+        height: 318px;
+    }
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
+    .second-object{
+        @include mixins.flex-grid(1, 24px, start);
+        align-items: stretch;
+        margin-top: 48px;
+    }
+
+    .object-img{
+        position: absolute;
+        bottom: -101px;
+        right: -487px;
+    }
+
+    .objectBlue-img{
+        position: absolute;
+        top: 22px;
+        left: 0px;
+        width: 349px;
+        height: 247px;
+    }
+
     .first-object{
         gap: 20px;
     }
@@ -145,6 +212,67 @@ margin: 0 0;
 
 
 @media (max-width: 767.98px) {
+    .second-object{
+        @include mixins.flex-grid(1, 24px, start);
+        align-items: stretch;
+        margin-top: 48px;
+    }
+
+    .blue-object, .red-object {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #CCE9F6;
+        border-radius: 20px;
+        overflow: hidden;
+        min-height: 100%;
+        position: relative;
+    }
+
+    .red-object {
+        background: #F2DFD5;
+    }
+
+    .object-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 24px;
+        width: 100%;
+    }
+
+    .test{
+        flex-grow: 1;
+        height: 165px;
+        width: 40%;
+    }
+
+    .object-img{
+        width: 652.733px;
+        height: 290px;
+        position: absolute;
+        bottom: -125px;
+        right: -402px;
+    }
+
+    .objectBlue-img{
+        position: absolute;
+        top: -53px;
+        left: 0px;
+        width: 340px;
+        height: 227px;
+    }
+
+    .objectRed-img{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 342px;
+        height: 213px;
+    }
+    
     .first-object{
         gap: 16px;
     }

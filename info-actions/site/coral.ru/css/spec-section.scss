@@ -35,9 +35,9 @@
     background-color: #0092D0;
 }
 
-.place1{
+.place1, .place2{
     background-image: url(../assets/antalia.jpg);
-    background-size: 1368px 300px;
+    background-size: 1370px 300px;
     display: flex;
     width: 100%;
     height: 300px;
@@ -50,15 +50,6 @@
 
 .place2{
     background-image: url(../assets/egeya.png);
-    background-size: 1368px 300px;
-    display: flex;
-    width: 100%;
-    height: 300px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 32px;
-    border-radius: 20px;
-    padding: 8px;
 }
 
 .place-info{
