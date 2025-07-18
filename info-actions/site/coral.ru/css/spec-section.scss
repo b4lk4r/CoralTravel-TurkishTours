@@ -88,6 +88,51 @@
 }
 
 
-@media (min-width: 1280px) and (max-width: 1439.98px) {
-    
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+    .place-info{
+        width: 450px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .place-info{
+        width: 340px;
+    }
+
+    .place1, .place2{
+        background-position: center;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+   .place-info{
+        width: 100%;
+    }
+
+    .place-info-title {
+        text-align: start;
+        font-size: 20px;
+    }
+
+    .place1, .place2{
+        background-position: 50px 50px;
+        background-size: 100%;
+        background: url(../assets/antalia-mob.png);
+        height: 520px;
+        width: 100%;
+    } 
+
+    .place2{
+        background: url(../assets/egeya-mob.png);
+    }
+
+    .switch-container{
+        width: 100%;
+    }
+
+    .switch-container-button{
+        width: 164px;
+    }
 }
