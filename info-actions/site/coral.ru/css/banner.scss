@@ -90,10 +90,15 @@
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
     .banner{
-        background: url(../assets/banner-bg-tablet.png);
+        background: url(../assets/banner-bg.jpg);
         height: 320px;
         padding: 0 35px;
-        background-size: 100% 100%;
+        background-size: 150% 125%;
+        background-position: -312px -37px;
+    }
+
+    .oval{
+        width: 600px;
     }
 
     .text-banner{
@@ -114,22 +119,24 @@
 @media (max-width: 767.98px) {
     .banner{
         align-items: flex-start;
-        background: url(../assets/banner-bg.jpg);
+        background: url(../assets/banner-bg-mob.png);
         height: 520px;
-        padding: 0 35px;
-        background-size: 400% 100%;
-        background-position: -849px 0px;
+        padding: 20px 30px;
+        background-size: 100% 100%;
+        background-position: 0px 0px;
     }
 
     .text-banner{
-        gap: var(--padding-padding_LG, 12px);
+        gap: var(--padding-padding_LG, 24px);
     }
 
     .title-text-banner{
         font-size: 36px;
+        line-height: 44px;
     }
 
     .desc-text-banner{
         font-size: 16px;
+        line-height: 20px;
     }
 }
