@@ -88,7 +88,7 @@ margin: 0 0;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 385px;
+    width: 60%;
     gap: 24px;
     padding: 24px;
     flex-grow: 1;
@@ -115,6 +115,42 @@ margin: 0 0;
 }
 
 .test{
-    width: 385px;
+    width: 40%;
     height: 100%;
+}
+
+
+
+@media (min-width: 1280px) and (max-width: 1439.98px) {
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .first-object{
+        gap: 20px;
+    }
+
+    .title{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .first-object{
+        gap: 16px;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
