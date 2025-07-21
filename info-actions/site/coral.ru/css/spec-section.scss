@@ -117,15 +117,19 @@
     }
 
     .place1, .place2{
-        background-position: 50px 50px;
-        background-size: 100%;
         background: url(../assets/antalia-mob.png);
+        background-position: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
         height: 520px;
         width: 100%;
     } 
 
     .place2{
         background: url(../assets/egeya-mob.png);
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .switch-container{
@@ -133,6 +137,6 @@
     }
 
     .switch-container-button{
-        width: 164px;
+        width: 100%;
     }
 }
